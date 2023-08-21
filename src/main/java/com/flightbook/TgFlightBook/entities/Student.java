@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name="students")
+@Table(name = "students")
 @Getter
 @Setter
 @RequiredArgsConstructor
@@ -41,17 +41,17 @@ public class Student {
 
     @Override
     public String toString() {
-        if(patronymic == null){
-            return "Студент\n" +
+        if (patronymic == null) {
+            return "Курсант\n" +
                     "Имя: " + firstName + "\n" +
                     "Фамилия: " + lastName + "\n" +
                     "Отчество: Не указано" + "\n" +
                     "Общий налет: " + totalFlightTime;
-        }else {
-            return "Студент\n" +
+        } else {
+            return "Курсант\n" +
                     "Имя: " + firstName + "\n" +
                     "Фамилия: " + lastName + "\n" +
-                    "Отчество" + patronymic + "\n" +
+                    "Отчество: " + patronymic + "\n" +
                     "Общий налет: " + totalFlightTime;
         }
     }

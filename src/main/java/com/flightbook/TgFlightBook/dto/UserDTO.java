@@ -1,16 +1,15 @@
-package com.flightbook.TgFlightBook.DTO;
+package com.flightbook.TgFlightBook.dto;
 
 import com.flightbook.TgFlightBook.entities.Instructor;
 import com.flightbook.TgFlightBook.entities.Student;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
 @Data
 @RequiredArgsConstructor
 public class UserDTO {
     private Long chatId;
-    private String previousCommand;
+    private String command;
     private Instructor promoInstructor;
     private Student promoStudent;
 

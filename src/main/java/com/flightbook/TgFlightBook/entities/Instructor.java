@@ -17,24 +17,24 @@ public class Instructor {
     Long id;
     @Column(name = "instructor_chat_id")
     Long chatId;
-    @Column(name="instructor_first_name")
+    @Column(name = "instructor_first_name")
     String firstName;
-    @Column(name="instructor_last_name")
+    @Column(name = "instructor_last_name")
     String lastName;
-    @Column(name="instructor_patronymic")
+    @Column(name = "instructor_patronymic")
     String patronymic;
-    @Column(name="flight_time_left")
+    @Column(name = "flight_time_left")
     String flightTimeLeft;
 
     @Override
     public String toString() {
-        if(patronymic == null){
+        if (patronymic == null) {
             return "Инструктор\n" +
                     "Имя: " + firstName + "\n" +
                     "Фамилия: " + lastName + "\n" +
                     "Отчество: Не указано" + "\n" +
                     "Остаток сан-нормы: " + flightTimeLeft;
-        }else {
+        } else {
             return "Инструктор\n" +
                     "Имя: " + firstName + "\n" +
                     "Фамилия: " + lastName + "\n" +

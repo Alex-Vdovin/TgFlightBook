@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name="activechatid")
+@Table(name = "activechatid")
 @Getter
 @Setter
 @ToString
@@ -17,10 +17,11 @@ public class ActiveChat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @Column(name="chat_id")
+    @Column(name = "chat_id")
     Long chatId;
-    @Column(name="command")
+    @Column(name = "command")
     String previousCommand;
+
     public ActiveChat(Long userId) {
         this.chatId = userId;
     }
